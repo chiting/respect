@@ -3,7 +3,7 @@ require 'debugger'
 
 require 'respect'
 
-# Test that "hash" methods has been removed from GlabelDef as soon as we load "respect".
+# Test that "hash" methods has been removed from GlobalDef as soon as we load "respect".
 # We cannot do it in HashSchema since the "hash" method maybe call before hand.
 if Respect::GlobalDef.new.respond_to? :hash
   raise "'hash' method should have been removed before Respect::HashSchema class is loaded."
