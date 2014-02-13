@@ -212,7 +212,7 @@ class FormatValidatorTest < Test::Unit::TestCase
     end
   end
 
-  def test_ipv4_addr_mention_wrong_value_in_error
+  def test_ipv4_addr_mention_wrong_hostname_value_in_error
     begin
       Respect::FormatValidator.new(:ipv4_addr).validate("invalid_hostname")
       assert false, "nothing raised"
